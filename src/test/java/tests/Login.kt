@@ -1,12 +1,11 @@
 package tests
 
-import org.sikuli.basics.Settings
 import org.testng.Assert.assertTrue
 import org.testng.annotations.Test
 import configs.*
+import org.sikuli.basics.Settings
 import pages.*
 import users.*
-
 
 class Login (private val IIN: String = akimIIN, private val password: String = akimPassword) {
     @Test
@@ -14,6 +13,7 @@ class Login (private val IIN: String = akimIIN, private val password: String = a
         Settings.ActionLogs = false
         page.setViewportSize(viewportWidth, viewportHeight)
         page.navigate(baseURL)
+
         page.click(eotinish_gov_kz_btn)
         page.fill(login_input, IIN)
         page.fill(password_input, password)
