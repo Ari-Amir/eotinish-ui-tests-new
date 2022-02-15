@@ -1,3 +1,3 @@
-package appealTypesAndForms
+package lists
 
 const val paper = "text=Бумажная (нарочно)"
