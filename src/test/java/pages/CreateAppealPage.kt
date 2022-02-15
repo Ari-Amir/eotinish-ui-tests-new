@@ -22,3 +22,6 @@ const val address = "textarea[name=personFactAddress]"
 const val mobilePhone_input = "text=Мобильный телефон СМС об ответе придет на указанный номер >> [placeholder=\"+7 000 000 00 00\"]"
 const val send_btn = "text=Отправить"
 const val NUTS_btn = "text=НУЦ РК"
+const val goToRegistry_btn = "text=Перейти в реестр"
+const val appealNumber_text = "#kt_body > ngb-modal-window > div > div > div.modal-body > div > div:nth-child(2)"
+
