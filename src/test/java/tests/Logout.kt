@@ -5,12 +5,16 @@ import org.testng.annotations.Test
 import configs.*
 import pages.*
 
+
 class Logout {
+    private val mainPage = MainPage()
+    private val loginPage = LoginPage()
+
     @Test
     fun logoutTest() {
         Login().loginTest()
-        page.click(user_avatar)
-        page.click(logout_text)
-        assertTrue(page.isVisible(eotinish_gov_kz_btn))
+        page.click(mainPage.user_avatar)
+        page.click(mainPage.logout_text)
+        assertTrue(page.isVisible(loginPage.eotinish_gov_kz_btn))
     }
 }
