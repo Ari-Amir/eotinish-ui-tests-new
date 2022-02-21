@@ -4,14 +4,16 @@ import pages.*
 import configs.*
 import lists.*
 import org.testng.annotations.Test
+import kotlin.test.assertEquals
 
 
-class CreateAssignment {
+class CreateAssignment (private var assert:Boolean = true) {
     private val appealCardPage = AppealCardPage()
     private val asideToggle = AsideToggle()
     private val allOutgoingAssignmentsPage = AllOutgoingAssignmentsPage()
     private val assignmentProjectCardPage = AssignmentProjectCardPage()
     private val registeredAppealsPage = RegisteredAppealsPage()
+    private val assignmentCardPage = AssignmentCardPage()
 
     @Test
     fun createAssignmentTest() {
@@ -53,5 +55,11 @@ class CreateAssignment {
         page.click(assignmentProjectCardPage.NUTS_btn)
 
         sign()
+
+        if (assert) {
+            assertEquals(page.innerText(assignmentCardPage.statusCreated), statusCreated)
+            assertEquals(page.innerText(assignmentCardPage.statusApproved), statusApproved)
+            assertEquals(page.innerText(assignmentCardPage.statusSigned), statusSigned)
+        }
     }
 }

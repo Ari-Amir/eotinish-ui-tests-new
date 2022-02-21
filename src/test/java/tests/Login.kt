@@ -8,7 +8,11 @@ import org.sikuli.basics.Settings
 import pages.*
 
 
-class Login (private val IIN: String = akim5IIN, private val password: String = akim5Password) {
+class Login(
+    private val IIN: String = Akim5().IIN,
+    private val password: String = Akim5().password,
+    private var assert: Boolean = true
+) {
     private val mainPage = MainPage()
     private val asideToggle = AsideToggle()
     private val loginPage = LoginPage()
@@ -28,6 +32,9 @@ class Login (private val IIN: String = akim5IIN, private val password: String = 
             page.waitForNavigation { page.click(loginPage.login_ru_btn) }
         }
         page.click(mainPage.language_ru_text)
-        assertTrue(page.isVisible(asideToggle.asideToggleFix_btn))
+
+        if (assert) {
+            assertTrue(page.isVisible(asideToggle.asideToggleFix_btn))
+        }
     }
 }
