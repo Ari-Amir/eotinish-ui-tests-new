@@ -6,15 +6,23 @@ import configs.*
 import pages.*
 
 
-class Logout {
+class Logout (private var assert:Boolean = true) {
     private val mainPage = MainPage()
     private val loginPage = LoginPage()
 
     @Test
     fun logoutTest() {
-        Login().loginTest()
-        page.click(mainPage.user_avatar)
-        page.click(mainPage.logout_text)
-        assertTrue(page.isVisible(loginPage.eotinish_gov_kz_btn))
+        if (!page.isVisible(mainPage.user_avatar)) {
+            Login().loginTest()
+            page.click(mainPage.user_avatar)
+            page.click(mainPage.logout_text)
+        } else {
+            page.click(mainPage.user_avatar)
+            page.click(mainPage.logout_text)
+        }
+
+        if (assert) {
+            assertTrue(page.isVisible(loginPage.eotinish_gov_kz_btn))
+        }
     }
 }
