@@ -8,7 +8,7 @@ import org.sikuli.basics.Settings
 import pages.*
 
 
-class Login(
+class Login (
     private val IIN: String = Akim5().IIN,
     private val password: String = Akim5().password,
     private var assert: Boolean = true

@@ -14,3 +14,14 @@ data class TSONOperator  (
     val IIN: String = "test_tson_operator",
     val password: String = "test_tson_operator"
 )
+
+data class AZRK  (
+    val name: String = "text=Жумангарин Серик Макашевич (Председатель)",
+    val IIN: String = "690722300295",
+    val password: String = "690722300295Aa"
+)
+
+data class Minfin  (
+    val IIN: String = "740325300142",
+    val password: String = "740325300142Aa"
+)
