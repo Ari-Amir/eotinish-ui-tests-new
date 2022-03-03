@@ -1,27 +1,32 @@
 package tests
 
-import pages.*
+
 import configs.*
+import helpers.DateFormat
 import lists.*
 import org.testng.annotations.Test
+import pages.*
 import kotlin.test.assertEquals
 
+
+var assignmentDeadline = ""
 
 class CreateAssignment (private var assert:Boolean = true) {
     private val appealCardPage = AppealCardPage()
     private val asideToggle = AsideToggle()
     private val allOutgoingAssignmentsPage = AllOutgoingAssignmentsPage()
     private val assignmentProjectCardPage = AssignmentProjectCardPage()
-    private val registeredAppealsPage = RegisteredAppealsPage()
+    private val registeredAppealsListPage = RegisteredAppealsListPage()
     private val assignmentCardPage = AssignmentCardPage()
+
 
     @Test
     fun createAssignmentTest() {
         CreateAppeal(false).createAppealTest()
-        page.click(registeredAppealsPage.appealsSearch_input)
-        page.fill(registeredAppealsPage.appealsSearch_input, appealNumber)
+        page.click(registeredAppealsListPage.appealsSearch_input)
+        page.fill(registeredAppealsListPage.appealsSearch_input, appealNumber)
         page.keyboard().press(enter_btn)
-        page.waitForNavigation { page.click(registeredAppealsPage.appealInList) }
+        page.waitForNavigation { page.click(registeredAppealsListPage.appealInList) }
         page.click(appealCardPage.createAssignment_btn)
 
         page.click(appealCardPage.region_dropdown)
@@ -35,6 +40,11 @@ class CreateAssignment (private var assert:Boolean = true) {
         page.click(appealCardPage.country2)
         page.click(appealCardPage.adresat2_dropdown)
         page.click(appealCardPage.adresat2)
+
+        page.click(appealCardPage.deadline_input)
+        page.click(appealCardPage.changeMonth_btn)
+        page.click(appealCardPage.date_btn)
+        assignmentDeadline = page.inputValue(appealCardPage.deadline_input)
 
         page.click(appealCardPage.appointSigner_text)
         page.click(appealCardPage.approvers_dropdown)
@@ -57,9 +67,10 @@ class CreateAssignment (private var assert:Boolean = true) {
         sign()
 
         if (assert) {
-            assertEquals(page.innerText(assignmentCardPage.statusCreated), statusCreated)
-            assertEquals(page.innerText(assignmentCardPage.statusApproved), statusApproved)
-            assertEquals(page.innerText(assignmentCardPage.statusSigned), statusSigned)
+            assertEquals(DateFormat().dateFormat(page.innerText(assignmentCardPage.assignmentDeadline)), assignmentDeadline)
+            assertEquals(page.innerText(assignmentCardPage.statusAssignmentCreated), statusAssignmentCreated)
+            assertEquals(page.innerText(assignmentCardPage.statusAssignmentApproved), statusAssignmentApproved)
+            assertEquals(page.innerText(assignmentCardPage.statusAssignmentSigned), statusAssignmentSigned)
         }
     }
 }

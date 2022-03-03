@@ -53,7 +53,7 @@ class ExecuteAssignment(private var assert: Boolean = true) {
         page.click(assignmentCardPage.signerAZRK)
         page.click(assignmentCardPage.sendtToApproveAndSign_btn)
 
-        page.click(assignmentCardPage.approve_btn)
+        page.click(assignmentCardPage.assignmentApprove_btn)
         page.click(assignmentCardPage.approve_btn_popup)
         page.click(assignmentCardPage.sign_btn)
         page.click(assignmentCardPage.NUTS_btn)
@@ -96,7 +96,7 @@ class ExecuteAssignment(private var assert: Boolean = true) {
         page.click(assignmentCardPage.signerMinfin)
         page.click(assignmentCardPage.sendtToApproveAndSign_btn)
 
-        page.click(assignmentCardPage.approve_btn)
+        page.click(assignmentCardPage.assignmentApprove_btn)
         page.click(assignmentCardPage.approve_btn_popup)
         page.click(assignmentCardPage.sign_btn)
         page.click(assignmentCardPage.NUTS_btn)

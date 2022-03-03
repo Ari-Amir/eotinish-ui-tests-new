@@ -15,7 +15,7 @@ class CreateAppeal (private var assert:Boolean = true) {
     private val appealCardPage = AppealCardPage()
     private val mainPage = MainPage()
     private val appealsRegistryTsonPage = AppealsRegistryTsonPage()
-    private val registeredAppealsPage = RegisteredAppealsPage()
+    private val registeredAppealsListPage = RegisteredAppealsListPage()
 
     @Test
     fun createAppealTest() {
@@ -63,11 +63,11 @@ class CreateAppeal (private var assert:Boolean = true) {
 
         if (assert) {
             when {
-                page.isVisible(registeredAppealsPage.appealsSearch_input) -> {
-                    page.click(registeredAppealsPage.appealsSearch_input)
-                    page.fill(registeredAppealsPage.appealsSearch_input, appealNumber)
+                page.isVisible(registeredAppealsListPage.appealsSearch_input) -> {
+                    page.click(registeredAppealsListPage.appealsSearch_input)
+                    page.fill(registeredAppealsListPage.appealsSearch_input, appealNumber)
                     page.keyboard().press(enter_btn)
-                    page.waitForNavigation { page.click(registeredAppealsPage.appealInList) }
+                    page.waitForNavigation { page.click(registeredAppealsListPage.appealInList) }
                     assertEquals(page.innerText(appealCardPage.cardHead_text), "$appealType №$appealNumber")
                     assertEquals(page.innerText(appealCardPage.appealSourceGO), GO)
 
