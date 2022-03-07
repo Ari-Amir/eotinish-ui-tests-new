@@ -13,7 +13,7 @@ fun sign() {
     sleep(300)
     screen.type("\n")
     sleep(300)
-    sleep(5000)
+//    sleep(5000)
     screen.type("")
     screen.type("\n")
     screen.type("\n")
