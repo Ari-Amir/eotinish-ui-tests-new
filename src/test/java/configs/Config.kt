@@ -11,6 +11,7 @@ const val viewportHeight = 1080
 val playWrite: Playwright = Playwright.create()
 val browser: Browser = playWrite.chromium().launch(BrowserType.LaunchOptions().setHeadless(false))
 val browserContext: BrowserContext = browser.newContext()
+val timeout = browserContext.setDefaultTimeout(60000.0)
 val page: Page = browserContext.newPage()
 const val baseURL = "https://backoffice.dev.eotinish.btsdapps.net/auth/login"
 

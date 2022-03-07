@@ -9,7 +9,7 @@ class AssignmentCardPage {
     val assignmentDeadline = "#kt_content > div > div > app-view > div.row > div.col-md-7.col-xxl-8 > div > div > div:nth-child(2) > div:nth-child(3) > div.field__value"
     val additionalAssignmentDeadline = "#kt_content > div > div > app-view > div.row > div.col-md-7.col-xxl-8 > app-additional-assignment-list > div:nth-child(1) > div > section > div:nth-child(1) > div:nth-child(3) > div.field__value"
     val createAdditionalAssignment_btn = "#kt_content > div > div > app-view > div.row > div.col-md-7.col-xxl-8 > div > div > div.d-flex.border-top.flex-wrap.pt-10 > app-create-assignment > button"
-
+    val innerDeadline = "#kt_content > div > div > app-view > div.row > div.col-md-7.col-xxl-8 > div > div > div:nth-child(4) > div:nth-child(2) > div.field__value"
 
     //Statuses
     val statusAssignmentCreated = "#kt_content > div > div > app-view > div.row > div.col-md-5.col-xxl-4 > div > app-assignment-history > div.history.pb-8.pl-8.pr-8 > div > div.i2-timeline__item.is--CREATED_DRAFT.is--DRAFT > div.i2-timeline__status"
@@ -24,6 +24,10 @@ class AssignmentCardPage {
     val responsibleSpecialist_dropdown = "text=Ответственный специалистВыбрать исполнителя >> span"
     val responsibleSpecialistAZRK = "text=Жумангарин Серик Макашевич (Председатель)"
     val responsibleSpecialistMinfin = "text=Министр финансов (Министр финансов)"
+    val assignmentInnerDeadline_input = "#kt_body > ngb-modal-window > div > div > div.modal-body > div > div:nth-child(3) > div > div > app-datepicker > div > div.input-group > dp-date-picker > div:nth-child(1) > div > input"
+    val assignmentInnerDeadlineChangeMonth_btn = "#kt_body > ngb-modal-window > div > div > div.modal-body > div > div:nth-child(3) > div > div > app-datepicker > div > div.input-group > dp-date-picker > div:nth-child(2) > div > dp-day-calendar > div > dp-calendar-nav > div > div.dp-nav-btns-container > div.dp-calendar-nav-container-right > button"
+    val assignmentInnerDeadlineDate_btn = "button:has-text(\"${helpers.Dates().getNextMonthDay()}\")"
+
     val assign_btn = "text=Назначить"
 
     val answerToAssignment_btn = "text=Ответить на поручение"
@@ -33,7 +37,7 @@ class AssignmentCardPage {
     val requestToProlong_rbtn = "label:has-text(\"Запрос на продление срока\")"
     val answerText_input = "textarea"
     val answerAZRK = "Ответ на поручение от АЗРК"
-    val answerMinfin = "Ответ на поручение от Минфина"
+    val answerMinfin = "Запрос на продление срока от Минфина"
     val attachFile_btn = "text=Прикрепить документы"
     val fileName_input = "[placeholder=\"Название\"]"
     val fileNameAZRK = "Файл АЗРК"
@@ -64,7 +68,7 @@ class AssignmentCardPage {
     val adresat2 = "[aria-label=\"Options\\ list\"] >> text=Министерство финансов Республики Казахстан"
     val deadline_input = "#kt_body > ngb-modal-window > div > div > div.modal-body > form > div:nth-child(2) > div > div > app-datepicker > div > div.input-group > dp-date-picker > div:nth-child(1) > div > input"
     val changeMonth_btn = "#kt_body > ngb-modal-window > div > div > div.modal-body > form > div:nth-child(2) > div > div > app-datepicker > div > div.input-group > dp-date-picker > div:nth-child(2) > div > dp-day-calendar > div > dp-calendar-nav > div > div.dp-nav-btns-container > div.dp-calendar-nav-container-right"
-    val date_btn = "#kt_body > ngb-modal-window > div > div > div.modal-body > form > div:nth-child(2) > div > div > app-datepicker > div > div.input-group > dp-date-picker > div:nth-child(2) > div > dp-day-calendar > div > div > div:nth-child(5) > button:nth-child(6)"
+    val date_btn = "button:has-text(\"${helpers.Dates().getNextMonthDay()}\")"
     val appointSigner_text = "text=Назначить себя"
     val approver = "div[role=\"option\"]:has-text(\"Замакима 5\")" //"div[role=\"option\"]:has-text(\"Аким Карагандинской области\")"
 }

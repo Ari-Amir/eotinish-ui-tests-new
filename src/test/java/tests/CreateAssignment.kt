@@ -2,10 +2,11 @@ package tests
 
 
 import configs.*
-import helpers.DateFormat
+import helpers.Dates
 import lists.*
 import org.testng.annotations.Test
 import pages.*
+import java.lang.Thread.sleep
 import kotlin.test.assertEquals
 
 
@@ -67,7 +68,7 @@ class CreateAssignment (private var assert:Boolean = true) {
         sign()
 
         if (assert) {
-            assertEquals(DateFormat().dateFormat(page.innerText(assignmentCardPage.assignmentDeadline)), assignmentDeadline)
+            assertEquals(Dates().dateFormat(page.innerText(assignmentCardPage.assignmentDeadline)), assignmentDeadline)
             assertEquals(page.innerText(assignmentCardPage.statusAssignmentCreated), statusAssignmentCreated)
             assertEquals(page.innerText(assignmentCardPage.statusAssignmentApproved), statusAssignmentApproved)
             assertEquals(page.innerText(assignmentCardPage.statusAssignmentSigned), statusAssignmentSigned)

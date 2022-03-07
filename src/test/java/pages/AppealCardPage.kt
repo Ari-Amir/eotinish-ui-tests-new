@@ -1,5 +1,7 @@
 package pages
 
+import helpers.Dates
+
 class AppealCardPage {
     val cardHead_text = "#kt_subheader > div > div > h5"
     val appealSourceGO = "#kt_content > div > div > app-appeal-registrar-view > div.row > div.col-md-7.col-xxl-8 > div > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div.field__value"
@@ -18,7 +20,10 @@ class AppealCardPage {
     val adresat2 = "div[role=\"option\"]:has-text(\"Министерство финансов Республики Казахстан\")"
     val deadline_input = "#kt_body > ngb-modal-window > div > div > div.modal-body > form > div:nth-child(2) > div > div > app-datepicker > div > div.input-group > dp-date-picker > div:nth-child(1) > div > input"
     val changeMonth_btn = "#kt_body > ngb-modal-window > div > div > div.modal-body > form > div:nth-child(2) > div > div > app-datepicker > div > div.input-group > dp-date-picker > div:nth-child(2) > div > dp-day-calendar > div > dp-calendar-nav > div > div.dp-nav-btns-container > div.dp-calendar-nav-container-right"
-    val date_btn = "#kt_body > ngb-modal-window > div > div > div.modal-body > form > div:nth-child(2) > div > div > app-datepicker > div > div.input-group > dp-date-picker > div:nth-child(2) > div > dp-day-calendar > div > div > div:nth-child(5) > button:nth-child(6)"
+    val date_btn = "button:has-text(\"${Dates().getNextMonthDay()}\")"
+
+
+
     val appointSigner_text = "text=Назначить себя"
     val approvers_dropdown = "text=Выбрать согласующихВыбрать согласующих >> span"
     val approver = "div[role=\"option\"]:has-text(\"Замакима 5\")" //"div[role=\"option\"]:has-text(\"Аким Карагандинской области\")"

@@ -19,6 +19,7 @@ class CreateAppeal (private var assert:Boolean = true) {
 
     @Test
     fun createAppealTest() {
+        timeout
         Login(assert = false).loginTest()
         page.waitForNavigation { page.click(mainPage.create_appeal_btn) }
         page.click(createAppealPage.appealType_dropdown)
