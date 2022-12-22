@@ -28,10 +28,10 @@ class Dates {
         val deadline: String
 
         deadline = if (
-            appealType == listOfAppealTypes[1] ||
-            appealType == listOfAppealTypes[2] ||
-            appealType == listOfAppealTypes[4] ||
-            appealType == listOfAppealTypes[8]
+            appealType == listOfAppealTypes[1] //||
+//            appealType == listOfAppealTypes[2] ||
+//            appealType == listOfAppealTypes[4] ||
+//            appealType == listOfAppealTypes[8]
             ) {
             getDateWithHolidays(listOfAppealAndComplaintDeadlines.getValue(appealType))
             } else {

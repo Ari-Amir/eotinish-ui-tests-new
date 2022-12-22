@@ -1,0 +1,192 @@
+Index: src/test/kotlin/tests/0. AllTests.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package tests\n\n\nimport org.junit.*\nimport org.junit.runners.*\n\n\n@FixMethodOrder(MethodSorters.NAME_ASCENDING)\nclass AllTests {\n    @Test\n    fun test_1_1() {\n        Login().loginTest()\n    }\n\n     @Test\n     fun test_1_2() {\n         LoginWithEDS().loginTest()\n     }\n\n     @Test\n     fun test_2_1() {\n         Logout().logoutTest()\n     }\n\n     @Test\n     fun test_3_1_1_1() {\n         CreateAppealByRegistrar().createAppealTest()\n     }\n\n     @Test\n     fun test_3_1_1_2() {\n         CreateAppealByTSONOperator().createAppealTest()\n     }\n\n     @Test\n     fun test_3_1_2_1() {\n         CreateComplaintByRegistrar().createComplaintTest()\n     }\n\n     @Test\n     fun test_3_1_2_2() {\n         CreateComplaintByTSONOperator().createComplaintTest()\n     }\n\n     @Test\n     fun test_3_2_1() {\n         SendToWorkByRegistrarToChief().sendToWorkTest()\n     }\n\n     @Test\n     fun test_3_2_2() {\n         SendToWorkByRegistrarToExecutor().sendToWorkTest()\n     }\n\n     @Test\n     fun test_3_2_3() {\n         SendToWorkByChiefToExecutor().sendToWorkTest()\n     }\n\n     @Test\n     fun test_3_2_4() {\n         SendToWorkByChiefToExecutorAndCoExecutor().sendToWorkTest()\n     }\n\n    @Test\n    fun test_3_2_5() {\n        ReassignExecutor().reassignExecutor()\n    }\n\n    @Test\n    fun test_3_2_6() {\n        ReassignCoExecutor().reassignCoExecutor()\n    }\n\n    @Test\n    fun test_3_2_7() {\n        ReassignExecutorAndCoExecutor().reassignExecutorAndCoExecutor()\n    }\n\n    @Test\n    fun test_3_2_8() {\n        CancelAllResolutions().cancelAllResolutions()\n    }\n\n    @Test\n    fun test_3_3_1_1(){\n         ExecuteAppealsGroupOneWithHearing().executeAppealsGroupOneWithHearing()\n     }\n\n    @Test\n    fun test_3_3_1_2(){\n         ExecuteAppealsGroupTwoWithHearing().executeAppealsGroupTwoWithHearing()\n     }\n\n    @Test\n    fun test_3_3_2_1(){\n         ExecuteAppealsGroupOneWithoutHearing().executeAppealsGroupOneWithoutHearing()\n     }\n\n    @Test\n    fun test_3_3_2_2(){\n         ExecuteAppealsGroupTwoWithoutHearing().executeAppealsGroupTwoWithoutHearing()\n     }\n\n    @Test\n    fun test_3_4_1(){\n        ExecuteComplaintsWithHearing().executeComplaintsWithHearing()\n    }\n\n    @Test\n    fun test_3_4_2(){\n        ExecuteComplaintsWithoutHearing().executeComplaintsWithoutHearing()\n    }\n\n    @Test\n    fun test_3_5_1(){\n        ForwardAppeal().forwardAppealTest()\n    }\n\n    @Test\n    fun test_3_5_2(){\n        ForwardComplaint().forwardComplaintTest()\n    }\n\n    @Test\n    fun test_3_6_1(){\n        Appeal63TSON().appeal63TSONTest()\n    }\n\n    @Test\n    fun test_3_6_2(){\n        Appeal63Registrar().appeal63RegistrarTest()\n    }\n\n    @Test\n    fun test_3_7_1(){\n        Complaint93TSON().complaint93TSONTest()\n    }\n\n    @Test\n    fun test_3_7_2(){\n        Complaint93Registrar().complaint93RegistrarTest()\n    }\n\n    @Test\n    fun test_3_8_1(){\n        ChangeAppealByRegistrar().changeAppealByRegistrarTest()\n    }\n\n    @Test\n    fun test_3_8_2(){\n        ChangeAppealByExecutor().changeAppealByExecutorTest()\n    }\n\n    @Test\n    fun test_3_10_1(){\n        RevokeAppealByRegistrar().revokeAppealByRegistrarTest()\n    }\n\n    @Test\n    fun test_3_10_2(){\n        CancelAppealExecutionAfterRevoke().cancelAppealExecutionAfterRevokeTest()\n    }\n\n    @Test\n    fun test_3_10_3(){\n        ContinueAppealExecutionAfterRevoke().continueAppealExecutionAfterRevokeTest()\n    }\n\n    @Test\n    fun test_3_10_4(){\n        RevokeAppealByTSONOperator().revokeAppealByTSONOperatorTest()\n    }\n\n    @Test\n    fun test_4_1(){\n        CreateAssignmentByRegistrar().createAssignmentByRegistrarTest()\n    }\n\n    @Test\n    fun test_4_2_1(){\n        SendAssignmentToWork1().sendAssignmentToWorkTest()\n    }\n\n    @Test\n    fun test_4_2_2(){\n        SendAssignmentToWork2().sendAssignmentToWorkTest()\n    }\n\n    @Test\n    fun test_4_2_3(){\n        SendAssignmentToWork3().sendAssignmentToWorkTest()\n    }\n\n    @Test\n    fun test_4_2_4(){\n        SendAssignmentToWork4().sendAssignmentToWorkTest()\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/kotlin/tests/0. AllTests.kt b/src/test/kotlin/tests/0. AllTests.kt
+--- a/src/test/kotlin/tests/0. AllTests.kt	(revision 101e435180285df50660372530004bba872b70f8)
++++ b/src/test/kotlin/tests/0. AllTests.kt	(date 1671711830967)
+@@ -122,6 +122,7 @@
+         ForwardComplaint().forwardComplaintTest()
+     }
+ 
++
+     @Test
+     fun test_3_6_1(){
+         Appeal63TSON().appeal63TSONTest()
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"fe0c9fad-0a7c-4dcc-8779-588a775382c4\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/compiler.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/gradle.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/jarRepositories.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/runConfigurations.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Read.me\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/build.gradle.kts\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/gradle.properties\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/gradlew\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/gradlew.bat\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/settings.gradle.kts\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/configs/Config.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/helpers/AttachFile.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/helpers/CreateAppealInDB/AppealData.sql\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/helpers/CreateAppealInDB/CreateAppealInDB.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/helpers/CreateAppealInDB/DBConnection.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/helpers/Dates.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/helpers/EncodeDecodeData.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/helpers/NCALayer.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/helpers/OpenAppeal.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/helpers/ScrollDown.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/helpers/SwitchUser.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/lists/AppealData.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/lists/AppealsLists.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/lists/Holidays.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/lists/Pages.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/lists/Registries.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/lists/Statuses.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/lists/Users.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/pages/AppealCardPage.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/pages/AssignmentCardPage.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/pages/ChangeAppealPage.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/pages/CreateAppealPage.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/pages/CreateComplaintPage.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/pages/LoginPage.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/pages/MainPage.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/pages/RegistriesPage.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/0. AllTests.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/1.1 Login.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/1.2 Login.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/2.1 Logout.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.1.1.1 CreateAppeal.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.1.1.2 CreateAppeal.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.1.2.1 CreateComplaint.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.1.2.2 CreateComplaint.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.10.1 RevokeAppeal.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.10.2 RevokeAppeal.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.10.3 RevokeAppeal.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.10.4 RevokeAppeal.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.2.1 SendToWork.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.2.2 SendToWork.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.2.3 SendToWork.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.2.4 SendToWork.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.2.5 ReassignExecutor.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.2.6 ReassignCoExecutor.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.2.7 ReassignExecutorAndCoExecutor.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.2.8 CancelAllResolutions.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.3.1.1 ExecuteAppealWithHearing.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.3.1.2 ExecuteAppealWithHearing.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.3.2.1 ExecuteAppealWithoutHearing.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.3.2.2 ExecuteAppealWithoutHearing.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.4.1 ExecuteComplaintlWithHearing.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.4.2 ExecuteComplaintlWithoutHearing.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.5.1 ForwardAppeal.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.5.2 ForwardComplaint.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.6.1 Appeal63.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.6.2 Appeal63.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.7.1 Complaint93.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.7.2 Complaint93.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.8.1 ChangeAppeal.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/3.8.2 ChangeAppeal.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/4.1 CreateAssignment.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/4.2.1 SendAssignmentToWork.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/4.2.2 SendAssignmentToWork.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/4.2.3 SendAssignmentToWork.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/4.2.4 SendAssignmentToWork.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/kotlin/tests/5.1 CreateAdditionalAssignment.kt\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2JBdi4I7FHj5t0K0I3IkOsfpkjV\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"reference.settingsdialog.project.gradle\" />\n  </component>\n  <component name=\"RunManager\" selected=\"JUnit.AllTests\">\n    <configuration name=\"Login\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" value=\"--tests &quot;tests.Login&quot;\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\":test\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"AllTests\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"eotinish-ui-tests-new.test\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"tests.AllTests\" />\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"AllTests.test_1_1\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"eotinish-ui-tests-new.test\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"tests.AllTests\" />\n      <option name=\"METHOD_NAME\" value=\"test_1_1\" />\n      <option name=\"TEST_OBJECT\" value=\"method\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Login\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"eotinish-ui-tests-new.test\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"tests.Login\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Login.loginTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"eotinish-ui-tests-new.test\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"tests.Login\" />\n      <option name=\"METHOD_NAME\" value=\"loginTest\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"JUnit.AllTests\" />\n        <item itemvalue=\"JUnit.AllTests.test_1_1\" />\n        <item itemvalue=\"TestNG.Login.loginTest\" />\n        <item itemvalue=\"TestNG.Login\" />\n        <item itemvalue=\"Gradle.Login\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"fe0c9fad-0a7c-4dcc-8779-588a775382c4\" name=\"Changes\" comment=\"\" />\n      <created>1671555536820</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1671555536820</updated>\n      <workItem from=\"1671555540033\" duration=\"180000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 101e435180285df50660372530004bba872b70f8)
++++ b/.idea/workspace.xml	(date 1671711876834)
+@@ -4,89 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="fe0c9fad-0a7c-4dcc-8779-588a775382c4" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Read.me" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/configs/Config.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/AttachFile.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/CreateAppealInDB/AppealData.sql" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/CreateAppealInDB/CreateAppealInDB.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/CreateAppealInDB/DBConnection.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/Dates.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/EncodeDecodeData.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/NCALayer.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/OpenAppeal.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/ScrollDown.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/SwitchUser.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/lists/AppealData.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/lists/AppealsLists.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/lists/Holidays.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/lists/Pages.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/lists/Registries.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/lists/Statuses.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/lists/Users.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pages/AppealCardPage.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pages/AssignmentCardPage.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pages/ChangeAppealPage.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pages/CreateAppealPage.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pages/CreateComplaintPage.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pages/LoginPage.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pages/MainPage.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pages/RegistriesPage.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/0. AllTests.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/1.1 Login.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/1.2 Login.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/2.1 Logout.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.1.1.1 CreateAppeal.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.1.1.2 CreateAppeal.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.1.2.1 CreateComplaint.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.1.2.2 CreateComplaint.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.1 RevokeAppeal.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.2 RevokeAppeal.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.3 RevokeAppeal.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.4 RevokeAppeal.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.2.1 SendToWork.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.2.2 SendToWork.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.2.3 SendToWork.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.2.4 SendToWork.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.2.5 ReassignExecutor.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.2.6 ReassignCoExecutor.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.2.7 ReassignExecutorAndCoExecutor.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.2.8 CancelAllResolutions.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.3.1.1 ExecuteAppealWithHearing.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.3.1.2 ExecuteAppealWithHearing.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.3.2.1 ExecuteAppealWithoutHearing.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.3.2.2 ExecuteAppealWithoutHearing.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.4.1 ExecuteComplaintlWithHearing.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.4.2 ExecuteComplaintlWithoutHearing.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.1 ForwardAppeal.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.2 ForwardComplaint.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.6.1 Appeal63.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.6.2 Appeal63.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.7.1 Complaint93.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.7.2 Complaint93.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.8.1 ChangeAppeal.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.8.2 ChangeAppeal.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/4.1 CreateAssignment.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/4.2.1 SendAssignmentToWork.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/4.2.2 SendAssignmentToWork.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/4.2.3 SendAssignmentToWork.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/4.2.4 SendAssignmentToWork.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/5.1 CreateAdditionalAssignment.kt" afterDir="false" />
++    <list default="true" id="fe0c9fad-0a7c-4dcc-8779-588a775382c4" name="Changes" comment="add tests">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/0. AllTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/0. AllTests.kt" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -97,21 +17,43 @@
+     <projectState path="$PROJECT_DIR$">
+       <ProjectState />
+     </projectState>
++  </component>
++  <component name="ExternalProjectsManager">
++    <system id="GRADLE">
++      <state>
++        <task path="$PROJECT_DIR$">
++          <activation />
++        </task>
++        <projects_view />
++      </state>
++    </system>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="testsss_branch" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2JBdi4I7FHj5t0K0I3IkOsfpkjV" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">
+-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+-    <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+-  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "WebServerToolWindowFactoryState": "false",
++    "node.js.detected.package.eslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "spring.configuration.checksum": "d9e4c65fd0decf9f65b53407cacc6e27",
++    "vue.rearranger.settings.migration": "true"
++  }
++}]]></component>
+   <component name="RunManager" selected="JUnit.AllTests">
+     <configuration name="Login" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+@@ -202,10 +144,10 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="JUnit.AllTests" />
+-        <item itemvalue="JUnit.AllTests.test_1_1" />
+         <item itemvalue="TestNG.Login.loginTest" />
+         <item itemvalue="TestNG.Login" />
++        <item itemvalue="JUnit.AllTests.test_1_1" />
++        <item itemvalue="JUnit.AllTests" />
+         <item itemvalue="Gradle.Login" />
+       </list>
+     </recent_temporary>
+@@ -219,6 +161,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1671555536820</updated>
+       <workItem from="1671555540033" duration="180000" />
++      <workItem from="1671711536138" duration="341000" />
+     </task>
+     <servers />
+   </component>

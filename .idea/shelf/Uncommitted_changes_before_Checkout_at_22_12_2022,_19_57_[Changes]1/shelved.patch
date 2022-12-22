@@ -1,0 +1,41 @@
+Index: src/test/kotlin/tests/3.5.3 ForwardComplaintUp.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package tests\n\nimport org.testng.annotations.Test\nimport kotlin.test.*\nimport helpers.*\nimport lists.*\nimport pages.*\n\n//ПЕРЕАДРЕСАЦИЯ ЖАЛОБ В ВЫШЕСТОЯЩИЙ ГО\n\nclass ForwardComplaintUp (private var assert: Boolean = true, private var complaintType: String = listOfComplaintTypes[0]) {\n    private val typesOfCreatedComplaints = mutableListOf<String>()\n    private val regNumbersOfCreatedComplaints = mutableListOf<String>()\n\n\n    @Test\n    fun forwardComplaintUpTest() {\n        //Проходимся по списку жалоб, по каждому элементу создаем жалобу Регистратором и направляем ее в работу Руководителю\n        for (i in listOfComplaintTypes.indices) {\n            SendToWorkByRegistrarToChief(false, listOfComplaintTypes[i]).sendToWorkTest()\n            typesOfCreatedComplaints.add(listOfComplaintTypes[i])\n            regNumbersOfCreatedComplaints.add(APPEAL_NUMBER)\n        }\n\n        //Переключаемся на Руководителя\n        switchOnUser(org1Chief1)\n\n        //Проходимся по списку жалоб, полученных в работу, подготавливаем к переадресации и отправляем их на согласование и подписание\n        for (i in regNumbersOfCreatedComplaints.indices) {\n            //Открываем жалобу:\n            org1Chief1.page.openComplaint(inWork, regNumbersOfCreatedComplaints[i])\n\n            //Нажимаем кнопку \"Переадресация в Вышестоящий ГО\", выбираем ГО для переадресации, указываем согласующего и подписанта, ставим галочку \"Переадресовать в части\"\n            org1Chief1.page.click(appealCardPage.forwardUp_btn)\n            org1Chief1.page.click(appealCardPage.region_dropdown)\n            org1Chief1.page.click(appealCardPage.country)\n            org1Chief1.page.click(appealCardPage.adresat_dropdown)\n            org1Chief1.page.click(appealCardPage.org2)\n            org1Chief1.page.click(appealCardPage.approvers_dropdown)\n            org1Chief1.page.click(appealCardPage.approver)\n            org1Chief1.page.click(appealCardPage.signer_dropdown)\n            org1Chief1.page.click(appealCardPage.signer)\n            org1Chief1.page.click(appealCardPage.send_btnUp)\n\n            //Согласовываем и подписываем переадресацию в Вышестоящий ГО\n            org1Chief1.page.click(appealCardPage.approveForwardingUp_btn)\n            org1Chief1.page.click(appealCardPage.approveForwardingUp_btn_popup)\n            org1Chief1.page.click(appealCardPage.signForwardingUp_btn)\n            org1Chief1.page.click(appealCardPage.NUTS_btn)\n\n            sign()\n\n            //Проверяем статусы согласования и подписания переадресации в Вышестоящий ГО, а также срок исполнения в карточке жалобы\n            if (assert) {\n                assertEquals(org1Chief1.page.innerText(appealCardPage.statusAppealForwardingUp), statusAppealForwardingUp)\n                assertEquals(org1Chief1.page.innerText(appealCardPage.statusAppealForwardingApprovedUp), statusAppealForwardingApprovedUp)\n                assertEquals(org1Chief1.page.innerText(appealCardPage.statusAppealFinishedUp), statusAppealFinishedUp)\n                assertEquals(org1Chief1.page.innerText(appealCardPage.deadlineOnExecitorCard), Dates().calculateAppealDeadline(typesOfCreatedComplaints[i]))\n            }\n        }\n\n        /*\n          ПРОВЕРКА:\n          Переключаемся на Регистратора АДРЕСАТА.\n          Открываем жалобу переадресованную в Вышестоящий ГО.\n          Проверяем дедлайн в карточке жалобы.\n          */\n        if (assert) {\n            switchOnUser(org2Registrar1)\n            for (i in regNumbersOfCreatedComplaints.indices) {\n                org2Registrar1.page.openComplaint(registeredAndWaitingForRoute, regNumbersOfCreatedComplaints[i])\n                assertEquals(org2Registrar1.page.innerText(appealCardPage.deadline2), Dates().calculateAppealDeadline(typesOfCreatedComplaints[i]))\n\n            }\n            println(\"Test 3.5.3   passed (${typesOfCreatedComplaints[0]}, ЖТ-${regNumbersOfCreatedComplaints[0]})\")\n            for (i in 1 until typesOfCreatedComplaints.size) {\n                println(\"                    (${typesOfCreatedComplaints[i]}, ЖТ-${regNumbersOfCreatedComplaints[i]})\")\n            }\n        }\n    }\n}\n
+===================================================================
+diff --git a/src/test/kotlin/tests/3.5.3 ForwardComplaintUp.kt b/src/test/kotlin/tests/3.5.3 ForwardComplaintUp.kt
+--- a/src/test/kotlin/tests/3.5.3 ForwardComplaintUp.kt	
++++ b/src/test/kotlin/tests/3.5.3 ForwardComplaintUp.kt	
+@@ -43,21 +43,21 @@
+             org1Chief1.page.click(appealCardPage.send_btnUp)
+ 
+             //Согласовываем и подписываем переадресацию в Вышестоящий ГО
+-            org1Chief1.page.click(appealCardPage.approveForwardingUp_btn)
+-            org1Chief1.page.click(appealCardPage.approveForwardingUp_btn_popup)
+-            org1Chief1.page.click(appealCardPage.signForwardingUp_btn)
+-            org1Chief1.page.click(appealCardPage.NUTS_btn)
++//            org1Chief1.page.click(appealCardPage.approveForwardingUp_btn)
++//            org1Chief1.page.click(appealCardPage.approveForwardingUp_btn_popup)
++//            org1Chief1.page.click(appealCardPage.signForwardingUp_btn)
++//            org1Chief1.page.click(appealCardPage.NUTS_btn)
+ 
+             sign()
+ 
+             //Проверяем статусы согласования и подписания переадресации в Вышестоящий ГО, а также срок исполнения в карточке жалобы
+-            if (assert) {
+-                assertEquals(org1Chief1.page.innerText(appealCardPage.statusAppealForwardingUp), statusAppealForwardingUp)
+-                assertEquals(org1Chief1.page.innerText(appealCardPage.statusAppealForwardingApprovedUp), statusAppealForwardingApprovedUp)
+-                assertEquals(org1Chief1.page.innerText(appealCardPage.statusAppealFinishedUp), statusAppealFinishedUp)
+-                assertEquals(org1Chief1.page.innerText(appealCardPage.deadlineOnExecitorCard), Dates().calculateAppealDeadline(typesOfCreatedComplaints[i]))
+-            }
+-        }
++//            if (assert) {
++//                assertEquals(org1Chief1.page.innerText(appealCardPage.statusAppealForwardingUp), statusAppealForwardingUp)
++//                assertEquals(org1Chief1.page.innerText(appealCardPage.statusAppealForwardingApprovedUp), statusAppealForwardingApprovedUp)
++//                assertEquals(org1Chief1.page.innerText(appealCardPage.statusAppealFinishedUp), statusAppealFinishedUp)
++//                assertEquals(org1Chief1.page.innerText(appealCardPage.deadlineOnExecitorCard), Dates().calculateAppealDeadline(typesOfCreatedComplaints[i]))
++//            }
++//        }
+ 
+         /*
+           ПРОВЕРКА:

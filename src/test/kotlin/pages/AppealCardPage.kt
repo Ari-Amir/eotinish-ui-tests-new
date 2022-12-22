@@ -41,6 +41,38 @@ class AppealCardPage {
     val signer_dropdown = "text=Выберите подписантаВыбрать подписанта >> div"
     val signer = "div[role=\"option\"]:has-text(\"${org1Chief1.name}\")"
 
+
+
+    //ComplaintUp
+    val forwardUp_btn = "text=Передать в Вышестоящий ГО"
+    val send_btnUp = ".justify-content-start > button"
+
+    val approveForwardingUp_btn = "div.border-top > app-approve-upward > button"
+    val approveForwardingUp_btn_popup = "div.modal-content > div > button"
+    val signForwardingUp_btn = "div.border-top > app-sign-upward > button"
+
+    val statusAppealForwardingUp ="div.i2-timeline__item.is--IN_PROGRESS.is--START_UPWARD > div.i2-timeline__status"
+    val statusAppealForwardingApprovedUp = "div.i2-timeline__item.is--APPROVE_UPWARD.is--IN_PROGRESS > div.i2-timeline__status"
+    val statusAppealFinishedUp = "div.i2-timeline__item.is--IN_PROGRESS.is--UPWARD > div.i2-timeline__status"
+
+
+
+    //Prolong
+    val statusStartProlong = "div.i2-timeline__item.is--IN_PROGRESS.is--START_PROLONG > div.i2-timeline__status"
+    val statusApproveProlong = "div.i2-timeline__item.is--APPROVE_PROLONG.is--IN_PROGRESS > div.i2-timeline__status"
+    val statusSignProlong = "div.i2-timeline__item.is--IN_PROGRESS.is--SIGN_PROLONG > div.i2-timeline__status"
+    val statusFinishedProlong = "div.i2-timeline__item.is--IN_PROGRESS.is--PROLONG > div.i2-timeline__status"
+    val statusRevokeProlong = "div.i2-timeline__item.is--IN_PROGRESS.is--WITHDRAW_PROLONG > div.i2-timeline__status"
+    val statusRejectProlong = "div.i2-timeline__item.is--IN_PROGRESS.is--REJECT_PROLONG > div.i2-timeline__status"
+
+    val revoke_btn = "button:has-text(\"Отозвать продление срока\")"
+    val reject_btn = "button:has-text(\"Отклонить продление срока\")"
+    val rejectForm = "div.form-group > textarea.form-control"
+    val rejectProlongReason = "Reject prolong reason"
+
+
+
+
     //Take decision popup
     val selectCategory_dropdown = "#kt_body > ngb-modal-window > div > div > div > div.modal-body > div.mb-12 > div:nth-child(3) > app-category-select > div > div"
     val category = "button:has-text(\"АДМИНИСТРАТИВНЫЕ ПРАВОНАРУШЕНИЯ, ОБЩЕСТВЕННАЯ И ДОРОЖНАЯ БЕЗОПАСНОСТЬ\")"
