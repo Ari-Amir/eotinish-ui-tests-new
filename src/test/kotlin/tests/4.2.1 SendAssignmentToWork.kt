@@ -104,7 +104,7 @@ class SendAssignmentToWork1(private var assert: Boolean = true) {
         org2Executor1.page.fill(assignmentCardPage.answerText_input, assignmentCardPage.answerFromOrg2Executor1)
         org2Executor1.page.click(assignmentCardPage.attachFile_btn)
 
-        attachFile()
+        attachFileFromMac()
 
         org2Executor1.page.fill(assignmentCardPage.fileName_input, assignmentCardPage.fileFromOrg2Executor1)
         org2Executor1.page.click(assignmentCardPage.send_btn)
@@ -123,7 +123,7 @@ class SendAssignmentToWork1(private var assert: Boolean = true) {
         org2Executor1.page.fill(assignmentCardPage.answerText_input, assignmentCardPage.requestToProlongFromOrg2Executor1)
         org2Executor1.page.click(assignmentCardPage.attachFile_btn)
 
-        attachFile()
+        attachFileFromMac()
 
         org2Executor1.page.fill(assignmentCardPage.fileName_input, assignmentCardPage.fileFromOrg2Executor1)
         org2Executor1.page.click(assignmentCardPage.send2_btn)

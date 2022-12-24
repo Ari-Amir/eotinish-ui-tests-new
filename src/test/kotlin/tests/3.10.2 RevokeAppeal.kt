@@ -24,7 +24,7 @@ class RevokeAppealByTSONOperator (
         TSONOperator.page.click(appealCardPage.revokeComment_input)
         TSONOperator.page.fill(appealCardPage.revokeComment_input, revokeComment)
         TSONOperator.page.click(appealCardPage.attachRevokeDocs_btn)
-        attachFile()
+        attachFileFromMac()
         TSONOperator.page.click(appealCardPage.createRevoke_btn)
         TSONOperator.page.click(appealCardPage.NUTS_btn)
         sign()

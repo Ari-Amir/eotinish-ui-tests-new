@@ -25,7 +25,7 @@ class RevokeAppealByRegistrar (
         org1Registrar1.page.click(appealCardPage.revokeComment_input)
         org1Registrar1.page.fill(appealCardPage.revokeComment_input, revokeComment)
         org1Registrar1.page.click(appealCardPage.attachRevokeDocs_btn)
-        attachFile()
+        attachFileFromMac()
         org1Registrar1.page.click(appealCardPage.createRevoke_btn)
         org1Registrar1.page.click(appealCardPage.NUTS_btn)
         sign()

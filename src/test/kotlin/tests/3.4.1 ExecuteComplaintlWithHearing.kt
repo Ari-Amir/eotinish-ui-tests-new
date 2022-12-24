@@ -43,7 +43,7 @@ class ExecuteComplaintsWithHearing (val assert:Boolean = true){
 
             //Прикрепляем предварительное решение
             org1Executor1.page.click(appealCardPage.attachPreDecision_btn)
-            attachFile()
+            attachFileFromMac()
             org1Executor1.page.fill(appealCardPage.attachedFilename_input, appealCardPage.attachedFilename)
 
             //Отправляем извещение
@@ -55,7 +55,7 @@ class ExecuteComplaintsWithHearing (val assert:Boolean = true){
 
             //Прикрепляем протокол заслушивания
             org1Executor1.page.click(appealCardPage.attachFile_btn)
-            attachFile()
+            attachFileFromMac()
 
             //Отправляем извещение
             org1Executor1.page.waitForSelector(appealCardPage.sendNotice_btn)
