@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c9fad-0a7c-4dcc-8779-588a775382c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/helpers/AttachFile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/AttachFile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.1 RevokeAppeal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.1 RevokeAppeal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.2 RevokeAppeal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.2 RevokeAppeal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.3 RevokeAppeal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.3 RevokeAppeal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.4 RevokeAppeal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.10.4 RevokeAppeal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.3.1.1 ExecuteAppealWithHearing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.3.1.1 ExecuteAppealWithHearing.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.3.1.2 ExecuteAppealWithHearing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.3.1.2 ExecuteAppealWithHearing.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.4.1 ExecuteComplaintlWithHearing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.4.1 ExecuteComplaintlWithHearing.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/4.2.1 SendAssignmentToWork.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/4.2.1 SendAssignmentToWork.kt" afterDir="false" />
-    </list>
+    <list default="true" id="fe0c9fad-0a7c-4dcc-8779-588a775382c4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,6 +173,7 @@
       <workItem from="1671909740377" duration="2015000" />
       <workItem from="1671911767065" duration="31000" />
       <workItem from="1671913745756" duration="3644000" />
+      <workItem from="1672066966921" duration="10000" />
     </task>
     <servers />
   </component>

@@ -134,30 +134,35 @@ fun Page.openRegistry (registry: String) {
             this.click(mainPage.asideToggleFix_btn)
             this.click(incomingTasks_tab)
             this.click(registry)
+            this.click(incomingTasks_tab)
             this.click(mainPage.asideToggleFix_btn)
         }
         allAppeals, inExecutorsWork, finished -> {
             this.click(mainPage.asideToggleFix_btn)
             this.click(AUTOTESTORG1_tab)
             this.click(registry)
+            this.click(AUTOTESTORG1_tab)
             this.click(mainPage.asideToggleFix_btn)
         }
         allOutgoing -> {
             this.click(mainPage.asideToggleFix_btn)
             this.click(outgoingAssignments_tab)
             this.click(registry)
+            this.click(outgoingAssignments_tab)
             this.click(mainPage.asideToggleFix_btn)
         }
         waitingForCheck -> {
             this.click(mainPage.asideToggleFix_btn)
             this.click(assignments_tab)
             this.click(registry)
+            this.click(assignments_tab)
             this.click(mainPage.asideToggleFix_btn)
         }
         myTasks, waitingForRouting, onApprove -> {
             this.click(mainPage.asideToggleFix_btn)
             this.click(incomingAssignments_tab)
             this.click(registry)
+            this.click(incomingAssignments_tab)
             this.click(mainPage.asideToggleFix_btn)
         }
         else -> {

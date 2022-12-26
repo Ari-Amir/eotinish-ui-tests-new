@@ -25,6 +25,7 @@ fun attachFileFromMac() {
     sleep(1000)
 }
 
+//Нужно использовать этот метод, если у вас Ubuntu
 fun attachFileFromUbuntu() {
     sleep(500)
     screen.click()
