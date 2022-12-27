@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe0c9fad-0a7c-4dcc-8779-588a775382c4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/helpers/Dates.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/Dates.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/lists/AppealsLists.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/lists/AppealsLists.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/pages/AppealCardPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/pages/AppealCardPage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.4 ProlongAppeal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.4 ProlongAppeal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.5 RevokeProlongAppeal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.5 RevokeProlongAppeal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.6 RejectProlongAppeal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.6 RejectProlongAppeal.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
