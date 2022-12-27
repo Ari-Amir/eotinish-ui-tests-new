@@ -6,12 +6,11 @@ import org.testng.annotations.Test
 import pages.appealCardPage
 import kotlin.test.assertEquals
 
+//ОТЗЫВ ПРОДЛЕНИЯ СРОКА РАССМОТРЕНИЯ
 
 class RevokeProlongAppeal (private var assert: Boolean = true, private var appealType: String = listOfAppealTypes[0]) {
     private val typesOfCreatedAppeals = mutableListOf<String>()
     private val regNumbersOfCreatedAppeals = mutableListOf<String>()
-
-
 
     @Test
     fun revokeProlongAppealTest() {
@@ -29,7 +28,6 @@ class RevokeProlongAppeal (private var assert: Boolean = true, private var appea
             //Открываем обращение
             org1Chief1.page.openAppeal(inWork, regNumbersOfCreatedAppeals[i])
 
-
             //Продлеваем срок обращения и отзываем продление
             org1Chief1.page.click(appealCardPage.prolongDeadline_btn)
             org1Chief1.page.locator(appealCardPage.dateInput).evaluate(appealCardPage.removeReadonly)
@@ -45,16 +43,12 @@ class RevokeProlongAppeal (private var assert: Boolean = true, private var appea
             org1Chief1.page.click(appealCardPage.prolongSigner)
             org1Chief1.page.click(appealCardPage.send_btn)
 
-            org1Chief1.page.click(appealCardPage.revoke_btn)
+            org1Chief1.page.click(appealCardPage.revokeDeadlinеProlong_btn)
             org1Chief1.page.click(appealCardPage.send_btn)
-
-
-
 
             if (assert) {
                 assertEquals(org1Chief1.page.innerText(appealCardPage.statusStartProlong), statusStartProlong)
                 assertEquals(org1Chief1.page.innerText(appealCardPage.statusRevokeProlong), statusRevokeProlong)
-                //assertEquals(org1Chief1.page.innerText(appealCardPage.deadlineOnExecitorCard), Dates().dateFormatChange(listOfAppealTypes[11]))
 
             }
         }

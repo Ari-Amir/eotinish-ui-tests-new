@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe0c9fad-0a7c-4dcc-8779-588a775382c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.3 ForwardComplaintUp.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.4 ProlongAppeal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.5 RevokeProlongAppeal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.6 RejectProlongAppeal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/configs/Config.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/configs/Config.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/helpers/Dates.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/Dates.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/lists/AppealsLists.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/lists/AppealsLists.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/lists/Pages.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/lists/Pages.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/lists/Statuses.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/lists/Statuses.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/pages/AppealCardPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/pages/AppealCardPage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.4 ProlongAppeal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.4 ProlongAppeal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.5 RevokeProlongAppeal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.5 RevokeProlongAppeal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.6 RejectProlongAppeal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tests/3.5.6 RejectProlongAppeal.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,41 +47,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2JBdi4I7FHj5t0K0I3IkOsfpkjV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "/Users/kuntuar.tleubergenov/IdeaProjects/eotinish-ui-tests-new/src/test/kotlin/tests",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kuntuar.tleubergenov/IdeaProjects/eotinish-ui-tests-new/src/test/kotlin/tests&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d9e4c65fd0decf9f65b53407cacc6e27&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/kotlin/tests" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.ProlongAppeal">
-    <configuration name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="eotinish-ui-tests-new.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AllTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ForwardComplaintUp" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="eotinish-ui-tests-new.test" />
       <extension name="coverage">
@@ -135,6 +130,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RejectProlongAppeals" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="eotinish-ui-tests-new.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RejectProlongAppeals" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RevokeProlongAppeal" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="eotinish-ui-tests-new.test" />
       <extension name="coverage">
@@ -155,10 +167,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ProlongAppeal" />
-        <item itemvalue="TestNG.ProlongAppeal.prolongAppealTest" />
-        <item itemvalue="TestNG.RevokeProlongAppeal" />
         <item itemvalue="TestNG.ForwardComplaintUp" />
-        <item itemvalue="JUnit.AllTests" />
+        <item itemvalue="TestNG.RejectProlongAppeals" />
+        <item itemvalue="TestNG.RevokeProlongAppeal" />
+        <item itemvalue="TestNG.ProlongAppeal.prolongAppealTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +183,8 @@
       <option name="presentableId" value="Default" />
       <updated>1671555536820</updated>
       <workItem from="1671555540033" duration="180000" />
+      <workItem from="1671718838419" duration="2255000" />
+      <workItem from="1672057124200" duration="3381000" />
     </task>
     <servers />
   </component>

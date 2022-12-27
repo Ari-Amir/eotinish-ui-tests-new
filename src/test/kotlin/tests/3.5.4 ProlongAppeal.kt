@@ -6,12 +6,11 @@ import org.testng.annotations.Test
 import pages.appealCardPage
 import kotlin.test.assertEquals
 
+//ПРОДЛЕНИЕ СРОКА РАССМОТРЕНИЯ
 
 class ProlongAppeal (private var assert: Boolean = true, private var appealType: String = listOfAppealTypes[0]) {
     private val typesOfCreatedAppeals = mutableListOf<String>()
     private val regNumbersOfCreatedAppeals = mutableListOf<String>()
-
-
 
     @Test
     fun prolongAppealTest() {
@@ -51,14 +50,14 @@ class ProlongAppeal (private var assert: Boolean = true, private var appealType:
 
             sign()
 
-
-
             if (assert) {
                 assertEquals(org1Chief1.page.innerText(appealCardPage.statusStartProlong), statusStartProlong)
                 assertEquals(org1Chief1.page.innerText(appealCardPage.statusApproveProlong), statusApproveProlong)
                 assertEquals(org1Chief1.page.innerText(appealCardPage.statusSignProlong), statusSignProlong)
                 assertEquals(org1Chief1.page.innerText(appealCardPage.statusFinishedProlong), statusFinishedProlong)
-                //assertEquals(org1Chief1.page.innerText(appealCardPage.deadlineOnExecitorCard), Dates().dateFormatChange(listOfAppealTypes[11]))
+
+                //TODO сделать проверку на измененную дату
+
 
             }
         }
