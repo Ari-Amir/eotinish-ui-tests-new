@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c9fad-0a7c-4dcc-8779-588a775382c4" name="Changes" comment="change test2">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="fe0c9fad-0a7c-4dcc-8779-588a775382c4" name="Changes" comment="ссс">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/pages/AppealCardPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/pages/AppealCardPage.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +38,16 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -159,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RevokeProlongAppeal" />
+        <item itemvalue="TestNG.RejectProlongAppeals" />
+        <item itemvalue="TestNG.ProlongAppeal.prolongAppealTest" />
         <item itemvalue="TestNG.ProlongAppeal" />
         <item itemvalue="TestNG.ForwardComplaintUp" />
-        <item itemvalue="TestNG.RejectProlongAppeals" />
-        <item itemvalue="TestNG.RevokeProlongAppeal" />
-        <item itemvalue="TestNG.ProlongAppeal.prolongAppealTest" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +200,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change test2" />

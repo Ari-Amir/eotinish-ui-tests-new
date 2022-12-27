@@ -65,6 +65,8 @@ class AppealCardPage {
     val statusRevokeProlong = "div.i2-timeline__item.is--IN_PROGRESS.is--WITHDRAW_PROLONG > div.i2-timeline__status"
     val statusRejectProlong = "div.i2-timeline__item.is--IN_PROGRESS.is--REJECT_PROLONG > div.i2-timeline__status"
 
+
+
     val revokeDeadlinеProlong_btn = "button:has-text(\"Отозвать продление срока\")"
     val rejectDeadlinеProlong_btn = "button:has-text(\"Отклонить продление срока\")"
     val rejectDeadlinеProlong_input = "div.form-group > textarea.form-control"
