@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c9fad-0a7c-4dcc-8779-588a775382c4" name="Changes" comment="ссс">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/pages/AppealCardPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/pages/AppealCardPage.kt" afterDir="false" />
-    </list>
+    <list default="true" id="fe0c9fad-0a7c-4dcc-8779-588a775382c4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,33 +18,30 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="eotinish-ui-tests-new" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -58,29 +52,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
+    &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kuntuar.tleubergenov/IdeaProjects/eotinish-ui-tests-new/src/test/kotlin/tests&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;d9e4c65fd0decf9f65b53407cacc6e27&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7e6bfcd0dc39ac5eacc0ba1c4e54ac8a&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/kotlin/tests" />
-    </key>
-  </component>
-  <component name="RunManager" selected="TestNG.ProlongAppeal">
-    <configuration name="ForwardComplaintUp" type="TestNG" temporary="true" nameIsGenerated="true">
+    }
+    }</component>
+  <component name="RunManager" selected="TestNG.ExecuteAppealsGroupOneWithHearing">
+    <configuration name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="eotinish-ui-tests-new.test" />
       <extension name="coverage">
         <pattern>
@@ -89,42 +76,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ForwardComplaintUp" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="tests.AllTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProlongAppeal" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EncodeDecodeData.getEncryptedData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="eotinish-ui-tests-new.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="helpers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ProlongAppeal" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProlongAppeal.prolongAppealTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="eotinish-ui-tests-new.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ProlongAppeal" />
-      <option name="METHOD_NAME" value="prolongAppealTest" />
+      <option name="PACKAGE_NAME" value="helpers" />
+      <option name="MAIN_CLASS_NAME" value="helpers.EncodeDecodeData" />
+      <option name="METHOD_NAME" value="getEncryptedData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -132,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RejectProlongAppeals" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ExecuteAppealsGroupOneWithHearing" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="eotinish-ui-tests-new.test" />
       <extension name="coverage">
         <pattern>
@@ -141,7 +109,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RejectProlongAppeals" />
+      <option name="MAIN_CLASS_NAME" value="tests.ExecuteAppealsGroupOneWithHearing" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -149,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RevokeProlongAppeal" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Login" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="eotinish-ui-tests-new.test" />
       <extension name="coverage">
         <pattern>
@@ -158,7 +126,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RevokeProlongAppeal" />
+      <option name="MAIN_CLASS_NAME" value="tests.Login" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendToWorkByRegistrarToChief" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="eotinish-ui-tests-new.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SendToWorkByRegistrarToChief" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -168,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RevokeProlongAppeal" />
-        <item itemvalue="TestNG.RejectProlongAppeals" />
-        <item itemvalue="TestNG.ProlongAppeal.prolongAppealTest" />
-        <item itemvalue="TestNG.ProlongAppeal" />
-        <item itemvalue="TestNG.ForwardComplaintUp" />
+        <item itemvalue="TestNG.ExecuteAppealsGroupOneWithHearing" />
+        <item itemvalue="TestNG.EncodeDecodeData.getEncryptedData" />
+        <item itemvalue="TestNG.SendToWorkByRegistrarToChief" />
+        <item itemvalue="TestNG.Login" />
+        <item itemvalue="JUnit.AllTests" />
       </list>
     </recent_temporary>
   </component>
@@ -185,35 +170,14 @@
       <option name="presentableId" value="Default" />
       <updated>1671555536820</updated>
       <workItem from="1671555540033" duration="180000" />
-      <workItem from="1671718838419" duration="2255000" />
-      <workItem from="1672057124200" duration="3381000" />
+      <workItem from="1671909740377" duration="2015000" />
+      <workItem from="1671911767065" duration="31000" />
+      <workItem from="1671913745756" duration="3644000" />
+      <workItem from="1672066966921" duration="10000" />
     </task>
-    <task id="LOCAL-00001" summary="change test2">
-      <created>1672120925831</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1672120925831</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="change test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="change test2" />
   </component>
 </project>
