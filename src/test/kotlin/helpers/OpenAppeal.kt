@@ -114,7 +114,6 @@ fun Page.openComplaintWithFraction(registry: String, complaintNum: String = COMP
             this.keyboard().press(enter_btn)
             when (registry) {
                 registeredAndWaitingForRoute -> this.click(appealFoundInRegisteredWithFraction)
-                TSONAppealRegistry -> this.click(appealFoundInRegisteredTSON)
                 else -> this.click(appealFoundInOtherRegistries)
             }
             this.removeTagPopup()

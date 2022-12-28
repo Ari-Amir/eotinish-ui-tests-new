@@ -1,12 +1,10 @@
 package helpers
 
-import configs.NCALayer
-import configs.password
-import configs.screen
+import configs.*
 import java.lang.Thread.sleep
 
 /*
-В пакете configs создать Котлин файл с именем Password.kt
+В пакете configs создать Котлин файл с именем Settings.kt
 В этот файл добавить: const val password = "Сюда вписать ваш пароль от ЭЦП"
 */
 

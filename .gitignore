@@ -2,5 +2,4 @@
 /.gradle/
 /.idea/
 /build/
-/src/test/kotlin/configs/Password.kt
-/src/test/kotlin/helpers/CreateAppealInDB/AppealData.sql
+/src/test/kotlin/configs/Settings.kt

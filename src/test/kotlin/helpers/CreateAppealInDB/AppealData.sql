@@ -1,3 +1,7 @@
+-- noinspection SqlNoDataSourceInspectionForFile
+
+-- noinspection SqlNoDataSourceInspection
+
 INSERT INTO public.applicants(
     id,
     applicant_type,
