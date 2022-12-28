@@ -1,4 +1,5 @@
 # Project exclude paths
 /.gradle/
+/.idea/
 /build/
 /src/test/kotlin/configs/Settings.kt
